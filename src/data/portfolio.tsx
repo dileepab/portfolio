@@ -95,7 +95,7 @@ export const profile: Profile = {
     happyClients: "80+", // Inferred from wins/clients
     openSourceContribs: "175+" // Using submission count as proxy for activity
   },
-  avatar: "/profile.jpg",
+  avatar: "./profile.jpg",
   about: [
     "I am an experienced Senior IT Professional with over 16 years in software development. My expertise spans the complete SDLC, where I excel in time-critical tasks and thrive under pressure. I am a skilled team player, adept at code reviews, and have a proven track record of leading teams to achieve company goals.",
     "As a Topcoder copilot and competitor since 2010, I have participated in hundreds of projects, securing 86 wins. My focus is on creating responsive, high-performance web and mobile applications using modern technologies like React, React Native, Flutter, and Angular.",
