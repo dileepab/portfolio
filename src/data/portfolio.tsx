@@ -82,8 +82,8 @@ export const profile: Profile = {
   bio: "Passionate Front End Developer dedicated to crafting immersive and user-centric web experiences. Proficient in transforming design concepts into pixel-perfect, interactive interfaces.",
   location: "Bingiriya, Sri Lanka",
   email: "bmdbalasuriya@gmail.com",
-  linkedin: "linkedin.com/in/dileepabalasuriya", // Inferred pattern, user can update
-  github: "profiles.topcoder.com/dileepa", // Using Topcoder as primary since it was emphasized
+  linkedin: "www.linkedin.com/in/dileepab/",
+  github: "github.com/dileepab",
   education: {
     degree: "B.Sc. Engineering (Hons)",
     school: "University of Peradeniya"
