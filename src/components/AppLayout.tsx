@@ -175,10 +175,10 @@ const AppLayout: React.FC = () => {
               </div>
 
               <div className="flex items-center gap-4 pt-4">
-                <a href={`https://${profile.github}`} className="p-3 bg-slate-800/50 rounded-lg hover:bg-slate-700 transition-colors group">
+                <a href={`https://${profile.github}`} target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-800/50 rounded-lg hover:bg-slate-700 transition-colors group">
                   <Github className="w-5 h-5 text-slate-400 group-hover:text-white" />
                 </a>
-                <a href={`https://${profile.linkedin}`} className="p-3 bg-slate-800/50 rounded-lg hover:bg-slate-700 transition-colors group">
+                <a href={`https://${profile.linkedin}`} target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-800/50 rounded-lg hover:bg-slate-700 transition-colors group">
                   <Linkedin className="w-5 h-5 text-slate-400 group-hover:text-white" />
                 </a>
                 <a href="#" className="p-3 bg-slate-800/50 rounded-lg hover:bg-slate-700 transition-colors group">
@@ -605,7 +605,7 @@ const AppLayout: React.FC = () => {
                     <div className="font-medium">{profile.email}</div>
                   </div>
                 </a>
-                <a href="#" className="flex items-center gap-4 p-4 bg-slate-800/30 rounded-xl border border-slate-700 hover:border-cyan-500/50 transition-colors group">
+                <a href={`https://${profile.linkedin}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 bg-slate-800/30 rounded-xl border border-slate-700 hover:border-cyan-500/50 transition-colors group">
                   <div className="p-3 bg-slate-700/50 rounded-lg group-hover:bg-cyan-500/20 transition-colors">
                     <Linkedin className="w-5 h-5 text-cyan-400" />
                   </div>
@@ -614,7 +614,7 @@ const AppLayout: React.FC = () => {
                     <div className="font-medium">{profile.linkedin}</div>
                   </div>
                 </a>
-                <a href="#" className="flex items-center gap-4 p-4 bg-slate-800/30 rounded-xl border border-slate-700 hover:border-cyan-500/50 transition-colors group">
+                <a href={`https://${profile.github}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 bg-slate-800/30 rounded-xl border border-slate-700 hover:border-cyan-500/50 transition-colors group">
                   <div className="p-3 bg-slate-700/50 rounded-lg group-hover:bg-cyan-500/20 transition-colors">
                     <Github className="w-5 h-5 text-cyan-400" />
                   </div>
@@ -703,16 +703,16 @@ const AppLayout: React.FC = () => {
                 with modern technologies.
               </p>
               <div className="flex items-center gap-3">
-                <a href="#" className="p-2 bg-slate-800 rounded-lg hover:bg-slate-700 transition-colors">
+                <a href={`https://${profile.github}`} target="_blank" rel="noopener noreferrer" className="p-2 bg-slate-800 rounded-lg hover:bg-slate-700 transition-colors">
                   <Github className="w-5 h-5 text-slate-400 hover:text-white" />
                 </a>
-                <a href="#" className="p-2 bg-slate-800 rounded-lg hover:bg-slate-700 transition-colors">
+                <a href={`https://${profile.linkedin}`} target="_blank" rel="noopener noreferrer" className="p-2 bg-slate-800 rounded-lg hover:bg-slate-700 transition-colors">
                   <Linkedin className="w-5 h-5 text-slate-400 hover:text-white" />
                 </a>
                 <a href="#" className="p-2 bg-slate-800 rounded-lg hover:bg-slate-700 transition-colors">
                   <Twitter className="w-5 h-5 text-slate-400 hover:text-white" />
                 </a>
-                <a href="#" className="p-2 bg-slate-800 rounded-lg hover:bg-slate-700 transition-colors">
+                <a href={`mailto:${profile.email}`} className="p-2 bg-slate-800 rounded-lg hover:bg-slate-700 transition-colors">
                   <Mail className="w-5 h-5 text-slate-400 hover:text-white" />
                 </a>
               </div>
