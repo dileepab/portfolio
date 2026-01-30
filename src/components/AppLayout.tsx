@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAppContext } from '@/contexts/AppContext';
 import { useIsMobile } from '@/hooks/use-mobile';
-import { Menu, X, Github, Linkedin, Twitter, Mail, ExternalLink, ChevronRight, Code, Server, Database, Palette, Terminal, Globe, Send, Download, Star, Quote, Calendar, MapPin, Briefcase, GraduationCap, Award, ArrowRight, CheckCircle } from 'lucide-react';
+import { Menu, X, Github, Linkedin, Twitter, Mail, Phone, ExternalLink, ChevronRight, Code, Server, Database, Palette, Terminal, Globe, Send, Download, Star, Quote, Calendar, MapPin, Briefcase, GraduationCap, Award, ArrowRight, CheckCircle } from 'lucide-react';
 
 import { profile, projects, skills as skillCategories, experiences, testimonials, blogPosts } from '@/data/portfolio';
 
@@ -603,6 +603,15 @@ const AppLayout: React.FC = () => {
                   <div>
                     <div className="text-sm text-slate-500">Email</div>
                     <div className="font-medium">{profile.email}</div>
+                  </div>
+                </a>
+                <a href={`tel:${profile.phone}`} className="flex items-center gap-4 p-4 bg-slate-800/30 rounded-xl border border-slate-700 hover:border-cyan-500/50 transition-colors group">
+                  <div className="p-3 bg-slate-700/50 rounded-lg group-hover:bg-cyan-500/20 transition-colors">
+                    <Phone className="w-5 h-5 text-cyan-400" />
+                  </div>
+                  <div>
+                    <div className="text-sm text-slate-500">Phone</div>
+                    <div className="font-medium">{profile.phone}</div>
                   </div>
                 </a>
                 <a href={`https://${profile.linkedin}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 bg-slate-800/30 rounded-xl border border-slate-700 hover:border-cyan-500/50 transition-colors group">

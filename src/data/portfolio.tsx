@@ -59,6 +59,7 @@ export interface Profile {
   bio: string;
   location: string;
   email: string;
+  phone: string;
   linkedin: string;
   github: string;
   education: {
@@ -82,6 +83,7 @@ export const profile: Profile = {
   bio: "Passionate Front End Developer dedicated to crafting immersive and user-centric web experiences. Proficient in transforming design concepts into pixel-perfect, interactive interfaces.",
   location: "Bingiriya, Sri Lanka",
   email: "bmdbalasuriya@gmail.com",
+  phone: "+94-702694270",
   linkedin: "www.linkedin.com/in/dileepab/",
   github: "github.com/dileepab",
   education: {
@@ -519,7 +521,10 @@ export const skills: SkillCategory[] = [
     skills: [
       { name: "Git", level: 95 },
       { name: "CI/CD", level: 85 },
-      { name: "Jest/Enzyme", level: 82 },
+      { name: "CI/CD", level: 85 },
+      { name: "Jest / Enzyme", level: 85 },
+      { name: "Testing Library", level: 80 },
+      { name: "Jira/Confluence", level: 90 },
       { name: "Jira/Confluence", level: 90 },
       { name: "Agile/Scrum", level: 92 },
     ]
