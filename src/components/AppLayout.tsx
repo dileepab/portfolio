@@ -704,12 +704,14 @@ const AppLayout: React.FC = () => {
               </ul>
             </div>
           </div>
+          <div className="pt-8 border-t border-slate-800 text-center">
+            <p className="text-slate-500 text-sm">
+              © {new Date().getFullYear()} {profile.name}. All rights reserved.
+            </p>
+          </div>
         </div>
+      </footer>
     </div>
-      </footer >
-        </div >
-      </footer >
-    </div >
   );
 };
 
