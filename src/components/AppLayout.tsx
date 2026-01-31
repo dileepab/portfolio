@@ -57,7 +57,6 @@ const AppLayout: React.FC = () => {
     { name: 'Skills', id: 'skills' },
     { name: 'Projects', id: 'projects' },
     { name: 'Experience', id: 'experience' },
-    { name: 'Blog', id: 'blog' },
     { name: 'Contact', id: 'contact' },
   ];
 
@@ -86,7 +85,9 @@ const AppLayout: React.FC = () => {
                 </button>
               ))}
               <a
-                href="#"
+                href="./DIleepa_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-lg font-medium text-sm hover:opacity-90 transition-opacity flex items-center gap-2"
               >
                 <Download className="w-4 h-4" />
@@ -118,7 +119,9 @@ const AppLayout: React.FC = () => {
                 </button>
               ))}
               <a
-                href="#"
+                href="./DIleepa_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 text-cyan-400 py-2"
               >
                 <Download className="w-4 h-4" />
@@ -522,58 +525,7 @@ const AppLayout: React.FC = () => {
       </section>
 
       {/* Blog Section */}
-      <section id="blog" className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 text-cyan-400 text-sm font-medium mb-4">
-              <span className="w-8 h-px bg-cyan-400"></span>
-              Latest Articles
-              <span className="w-8 h-px bg-cyan-400"></span>
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              From My Blog
-            </h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
-              Thoughts, tutorials, and insights on software development and technology.
-            </p>
-          </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {blogPosts.map(post => (
-              <Link
-                key={post.id}
-                to={`/blog/${post.slug}`}
-                className="group p-6 bg-slate-800/30 rounded-2xl border border-slate-700 hover:border-cyan-500/50 transition-all hover:-translate-y-1"
-              >
-                <div className="flex items-center gap-2 text-sm text-slate-500 mb-3">
-                  <span>{post.date}</span>
-                  <span>•</span>
-                  <span>{post.readTime}</span>
-                </div>
-                <h3 className="font-semibold mb-2 group-hover:text-cyan-400 transition-colors line-clamp-2">
-                  {post.title}
-                </h3>
-                <p className="text-slate-400 text-sm mb-4 line-clamp-2">
-                  {post.excerpt}
-                </p>
-                <span className="inline-block px-3 py-1 bg-slate-700/50 rounded-full text-xs text-cyan-400">
-                  {post.category}
-                </span>
-              </Link>
-            ))}
-          </div>
-
-          <div className="text-center mt-10">
-            <Link
-              to="/blog"
-              className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-medium"
-            >
-              View All Articles
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </div>
-      </section>
 
 
       {/* Contact Section */}
@@ -752,18 +704,12 @@ const AppLayout: React.FC = () => {
               </ul>
             </div>
           </div>
-          <div className="pt-8 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p className="text-slate-500 text-sm">
-              © {new Date().getFullYear()} {profile.name}. All rights reserved.
-            </p>
-            <div className="flex items-center gap-6 text-sm text-slate-500">
-              <a href="#" className="hover:text-cyan-400 transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-cyan-400 transition-colors">Terms of Service</a>
-            </div>
-          </div>
         </div>
-      </footer>
     </div>
+      </footer >
+        </div >
+      </footer >
+    </div >
   );
 };
 
