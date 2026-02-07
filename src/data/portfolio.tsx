@@ -97,7 +97,7 @@ export const profile: Profile = {
     happyClients: "80+", // Inferred from wins/clients
     openSourceContribs: "175+" // Using submission count as proxy for activity
   },
-  avatar: "./profile.jpg",
+  avatar: "./profile.png",
   about: [
     "I am an experienced Senior IT Professional with over 16 years in software development. My expertise spans the complete SDLC, where I excel in time-critical tasks and thrive under pressure. I am a skilled team player, adept at code reviews, and have a proven track record of leading teams to achieve company goals.",
     "As a Topcoder copilot and competitor since 2010, I have participated in hundreds of projects, securing 86 wins. My focus is on creating responsive, high-performance web and mobile applications using modern technologies like React, React Native, Flutter, and Angular.",
@@ -520,12 +520,8 @@ export const skills: SkillCategory[] = [
     icon: <Terminal className="w-6 h-6" />,
     skills: [
       { name: "Git", level: 95 },
-      { name: "CI/CD", level: 85 },
-      { name: "CI/CD", level: 85 },
       { name: "Jest / Enzyme", level: 85 },
       { name: "Testing Library", level: 80 },
-      { name: "Jira/Confluence", level: 90 },
-      { name: "Jira/Confluence", level: 90 },
       { name: "Agile/Scrum", level: 92 },
     ]
   },
