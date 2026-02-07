@@ -138,8 +138,8 @@ const AppLayout: React.FC = () => {
     <div className="min-h-screen bg-[#0a0f1c] text-white overflow-x-hidden">
       {/* ===== NAVIGATION ===== */}
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
-          ? 'bg-[#0a0f1c]/80 backdrop-blur-2xl border-b border-white/[0.06] shadow-lg shadow-black/20'
-          : 'bg-transparent'
+        ? 'bg-[#0a0f1c]/80 backdrop-blur-2xl border-b border-white/[0.06] shadow-lg shadow-black/20'
+        : 'bg-transparent'
         }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
@@ -164,8 +164,8 @@ const AppLayout: React.FC = () => {
                   key={link.id}
                   onClick={() => scrollToSection(link.id)}
                   className={`relative px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg ${activeNav === link.id
-                      ? 'text-cyan-400'
-                      : 'text-slate-400 hover:text-white'
+                    ? 'text-cyan-400'
+                    : 'text-slate-400 hover:text-white'
                     }`}
                 >
                   {link.name}
@@ -411,8 +411,8 @@ const AppLayout: React.FC = () => {
                 key={idx}
                 onClick={() => setActiveSkillTab(idx)}
                 className={`flex items-center gap-2.5 px-5 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${activeSkillTab === idx
-                    ? 'bg-gradient-to-r from-cyan-500/20 to-blue-600/20 text-cyan-400 border border-cyan-500/30 shadow-lg shadow-cyan-500/10'
-                    : 'glass text-slate-400 hover:text-white'
+                  ? 'bg-gradient-to-r from-cyan-500/20 to-blue-600/20 text-cyan-400 border border-cyan-500/30 shadow-lg shadow-cyan-500/10'
+                  : 'glass text-slate-400 hover:text-white'
                   }`}
               >
                 {/* Try to use icon from data if available, else fallback provided by mapping/data */}
@@ -462,8 +462,8 @@ const AppLayout: React.FC = () => {
                 key={filter}
                 onClick={() => setActiveFilter(filter)}
                 className={`px-5 py-2.5 rounded-xl text-sm font-medium transition-all duration-300 ${activeFilter === filter
-                    ? 'btn-primary text-white shadow-lg shadow-cyan-500/20'
-                    : 'glass text-slate-400 hover:text-white'
+                  ? 'btn-primary text-white shadow-lg shadow-cyan-500/20'
+                  : 'glass text-slate-400 hover:text-white'
                   }`}
               >
                 {filter.charAt(0).toUpperCase() + filter.slice(1)}
@@ -689,13 +689,13 @@ const AppLayout: React.FC = () => {
                   { icon: <Linkedin className="w-5 h-5 text-cyan-400" />, label: 'LinkedIn', value: profile.linkedin, href: `https://${profile.linkedin}` },
                   { icon: <Github className="w-5 h-5 text-cyan-400" />, label: 'GitHub', value: profile.github, href: `https://${profile.github}` },
                 ].map((contact, idx) => (
-                  <a key={idx} href={contact.href} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 bg-slate-800/30 rounded-xl border border-slate-700 hover:border-cyan-500/50 transition-colors group">
-                    <div className="p-3 bg-slate-700/50 rounded-lg group-hover:bg-cyan-500/20 transition-colors">
+                  <a key={idx} href={contact.href} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 bg-slate-800/30 rounded-xl border border-slate-700 hover:border-cyan-500/50 transition-all duration-300 group hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/10">
+                    <div className="p-3 bg-slate-700/50 rounded-lg group-hover:bg-cyan-500/20 transition-all duration-300 group-hover:scale-110">
                       {contact.icon}
                     </div>
                     <div>
-                      <div className="text-sm text-slate-500">{contact.label}</div>
-                      <div className="font-medium">{contact.value}</div>
+                      <div className="text-sm text-slate-500 group-hover:text-cyan-400 transition-colors">{contact.label}</div>
+                      <div className="font-medium text-slate-200 group-hover:text-white transition-colors">{contact.value}</div>
                     </div>
                   </a>
                 ))}
